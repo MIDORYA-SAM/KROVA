@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#08050d">
+<meta name="description" content="KROVA — The flock is coming.">
+<title>KROVA — The Flock Is Coming</title>
+<style>
+:root{--bg:#08050d;--panel:#100b18;--panel2:#160d21;--text:#f5f0fa;--muted:#a89caf;--purple:#a855f7;--purple2:#6d28d9;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 50% -10%,#32104d 0,#10091a 28%,var(--bg) 62%);color:var(--text);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:42px 42px}
+a{text-decoration:none;color:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px 6%;backdrop-filter:blur(16px);background:rgba(8,5,13,.68);border-bottom:1px solid var(--line)}
+.logo{font-size:1.35rem;font-weight:900;letter-spacing:.16em}.logo span{color:var(--purple)}
+.navlinks{display:flex;gap:10px}.navlinks a,.btn{border:1px solid var(--line);padding:10px 16px;border-radius:999px;font-weight:800;font-size:.82rem;transition:.2s}
+.navlinks a:hover,.btn:hover{transform:translateY(-2px);border-color:#a855f7;background:rgba(168,85,247,.12)}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 6% 70px;position:relative}
+.glow{position:absolute;width:360px;height:360px;border-radius:50%;background:#8b2be044;filter:blur(75px);top:18%;left:50%;transform:translateX(-50%);animation:pulse 4s infinite alternate}
+@keyframes pulse{to{transform:translateX(-50%) scale(1.18);opacity:.65}}
+.crow{font-size:clamp(5rem,17vw,10rem);filter:drop-shadow(0 0 35px #a855f7);animation:float 3.5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+.badge{display:inline-block;margin:14px 0;padding:8px 13px;border:1px solid #a855f755;border-radius:999px;color:#d8b4fe;background:#a855f710;font-weight:800;font-size:.76rem;letter-spacing:.13em}
+h1{font-size:clamp(3.2rem,11vw,7rem);line-height:.9;letter-spacing:-.07em;font-weight:1000}
+h1 span{color:var(--purple)}
+.hero p{max-width:650px;margin:25px auto;color:var(--muted);font-size:1.05rem;line-height:1.7}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.primary{background:linear-gradient(135deg,#a855f7,#6d28d9);border:0;box-shadow:0 12px 40px #8b2be033}.primary:hover{box-shadow:0 15px 50px #a855f755}
+.section{max-width:1100px;margin:auto;padding:95px 6%}
+.kicker{color:#c084fc;font-size:.75rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
+h2{font-size:clamp(2rem,6vw,4rem);letter-spacing:-.05em;margin-bottom:18px}
+.lead{color:var(--muted);line-height:1.8;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
+.card{background:linear-gradient(145deg,#140c1d,#0c0711);border:1px solid var(--line);border-radius:22px;padding:25px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#a855f766}
+.card h3{margin:10px 0}.card p{color:var(--muted);line-height:1.65;font-size:.92rem}
+.icon{font-size:2rem}.token{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:35px}
+.stat{padding:24px;border-radius:18px;background:#0d0813;border:1px solid var(--line)}.stat small{color:var(--muted);display:block;margin-bottom:7px}.stat strong{font-size:1.35rem}
+.roadmap{position:relative;margin-top:35px;display:grid;gap:14px}.phase{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;padding:22px;border:1px solid var(--line);border-radius:18px;background:#0d0813}.phase b{color:#c084fc}.phase p{color:var(--muted);margin-top:5px}
+.community{text-align:center;border:1px solid var(--line);border-radius:28px;padding:55px 20px;background:radial-gradient(circle at center,#2b1043,#0c0711 65%)}
+footer{text-align:center;padding:45px 6%;border-top:1px solid var(--line);color:#817587;font-size:.8rem}
+.copy{cursor:pointer}
+@media(max-width:700px){.nav{padding:15px 5%}.navlinks a{padding:9px 11px}.grid,.token{grid-template-columns:1fr}.phase{grid-template-columns:1fr;gap:5px}.section{padding:75px 5%}.navlinks a:first-child{display:none}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#">KR<span>O</span>VA</a>
+  <nav class="navlinks">
+    <!-- TROQUE OS LINKS ABAIXO -->
+    <a href="https://x.com/SEU_X" target="_blank" rel="noopener">X</a>
+    <a href="https://t.me/SEU_TELEGRAM" target="_blank" rel="noopener">TELEGRAM</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="glow"></div>
+  <div>
+    <div class="crow">🐦‍⬛</div>
+    <div class="badge">THE FLOCK IS COMING</div>
+    <h1>KRO<span>VA</span></h1>
+    <p>A community-driven meme experiment built around one simple idea: when the flock moves, everyone notices.</p>
+    <div class="actions">
+      <!-- COLOQUE O LINK DA SUA KROVA NA PUMP.FUN -->
+      <a class="btn primary" href="https://pump.fun/" target="_blank" rel="noopener">BUY $KROV</a>
+      <a class="btn" href="#about">ENTER THE NEST ↓</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="kicker">01 / THE IDEA</div>
+  <h2>Born in the dark.<br>Built for the flock.</h2>
+  <p class="lead">KROVA is a meme coin project with a cyber-crow identity and a community-first culture. No complicated story. No fake promises. Just a memorable brand, a growing flock, and a place for the community to build something together.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">🐦‍⬛</div><h3>The Crow</h3><p>The symbol of KROVA: intelligent, watchful and impossible to ignore.</p></article>
+    <article class="card"><div class="icon">🌑</div><h3>The Nest</h3><p>A digital home for the community, memes, art and experiments.</p></article>
+    <article class="card"><div class="icon">⚡</div><h3>The Flock</h3><p>KROVA grows through community participation—not promises of returns.</p></article>
+  </div>
+</section>
+
+<section class="section" id="tokenomics">
+  <div class="kicker">02 / TOKEN</div>
+  <h2>$KROV</h2>
+  <p class="lead">Replace the placeholders below with the actual token information from your launch.</p>
+  <div class="token">
+    <div class="stat"><small>TICKER</small><strong>$KROV</strong></div>
+    <div class="stat"><small>TOTAL SUPPLY</small><strong>1,000,000,000</strong></div>
+    <div class="stat"><small>TAX</small><strong>0%</strong></div>
+    <div class="stat copy" onclick="copyContract()"><small>CONTRACT</small><strong id="contract">ADD CONTRACT →</strong></div>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="kicker">03 / ROADMAP</div>
+  <h2>The flock takes flight.</h2>
+  <div class="roadmap">
+    <div class="phase"><b>PHASE 01</b><div><strong>THE NEST</strong><p>Launch, website, social channels and first community.</p></div></div>
+    <div class="phase"><b>PHASE 02</b><div><strong>THE FLOCK</strong><p>Memes, community events, creator collaborations and brand expansion.</p></div></div>
+    <div class="phase"><b>PHASE 03</b><div><strong>TAKE FLIGHT</strong><p>Community-led experiments and new KROVA experiences.</p></div></div>
+    <div class="phase"><b>PHASE 04</b><div><strong>BEYOND THE SKY</strong><p>Future utilities and projects decided transparently with the community.</p></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="community">
+    <div class="kicker">04 / COMMUNITY</div>
+    <h2>Join the flock.</h2>
+    <p class="lead" style="margin:0 auto 25px">Follow KROVA, share the memes and help shape what comes next.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://x.com/SEU_X" target="_blank" rel="noopener">FOLLOW ON X</a>
+      <a class="btn" href="https://t.me/SEU_TELEGRAM" target="_blank" rel="noopener">JOIN TELEGRAM</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>KROVA © 2026 — $KROV · A community-driven meme project.</footer>
+
+<script>
+function copyContract(){
+  const el=document.getElementById("contract");
+  const value=el.dataset.address;
+  if(!value){alert("Add the KROVA contract address in the HTML first.");return}
+  navigator.clipboard.writeText(value);
+  el.textContent="COPIED ✓";
+  setTimeout(()=>el.textContent=value,1500);
+}
+</script>
+</body>
+</html>
